@@ -115,8 +115,8 @@ app.post('/exchange-code', async (req, res) => {
     return res.status(400).send('Authorization code is required');
   }
 
-  const clientId = 'KGCD5ryo5PMEPI0I5jI5KkGgon2qtizfkumuN5wm';
-  const clientSecret = 'PndtJOg7t5vRkyQhTfHqbhnCv5SZ9r1V3vZNjsAyLs0rhRwcObcZQMQX4xlZPlbA0qBRfX0tuYby2koSLR5t2CIyjVpuEwbyBCActJy61nEQZBmxcCLxJwo6q6Vx8hfA';
+  const clientId = 'KPxwLsdr7EBH34tmiTEKAojT2KwyLJI48n9eUP47';
+  const clientSecret = '1YycM1FyoA9Felc2Vy4ESbJd9dqAmyegk4SSOTqRO8kVupOpSogCatTR6miAlEAQHlIysV6jjOqnA7JoJiALrOEna4XvEusf5EbUdN5M6TNALem76ripwVchQHuqWvny';
   // const clientId = 'KPxwLsdr7EBH34tmiTEKAojT2KwyLJI48n9eUP47';
   // const clientSecret = '1YycM1FyoA9Felc2Vy4ESbJd9dqAmyegk4SSOTqRO8kVupOpSogCatTR6miAlEAQHlIysV6jjOqnA7JoJiALrOEna4XvEusf5EbUdN5M6TNALem76ripwVchQHuqWvny';
   const redirectUri = 'https://drchronos-report-front.onrender.com/oauth-callback';
