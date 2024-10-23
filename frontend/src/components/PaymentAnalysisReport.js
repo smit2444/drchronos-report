@@ -622,13 +622,13 @@ const PaymentAnalysisReport = () => {
       }
       try {
         const [providersRes, officesRes, profilesRes] = await Promise.all([
-          axios.get('http://localhost:4000/api/doctors', {
+          axios.get('https://drchronos-report.onrender.com/api/doctors', {
             headers: { Authorization: `Bearer ${token}` },
           }),
-          axios.get('http://localhost:4000/api/offices', {
+          axios.get('https://drchronos-report.onrender.com/api/offices', {
             headers: { Authorization: `Bearer ${token}` },
           }),
-          axios.get('http://localhost:4000/api/appointment_profiles', {
+          axios.get('https://drchronos-report.onrender.com/api/appointment_profiles', {
             headers: { Authorization: `Bearer ${token}` },
           }),
         ]);
@@ -681,7 +681,7 @@ const PaymentAnalysisReport = () => {
       console.log(`Fetching data. Load More: ${isLoadMore}, Params:`, params);
 
       const response = await axios.get(
-        'http://localhost:4000/api/generate-payment-analysis-report',
+        'https://drchronos-report.onrender.com/api/generate-payment-analysis-report',
         {
           params: params,
           headers: { Authorization: `Bearer ${token}` },

@@ -1228,9 +1228,9 @@ const DenialReport = () => {
       }
       try {
         const [doctorsRes, officesRes, profilesRes] = await Promise.all([
-          axios.get('http://localhost:4000/api/doctors', { headers: { Authorization: `Bearer ${token}` } }),
-          axios.get('http://localhost:4000/api/offices', { headers: { Authorization: `Bearer ${token}` } }),
-          axios.get('http://localhost:4000/api/appointment_profiles', { headers: { Authorization: `Bearer ${token}` } }),
+          axios.get('https://drchronos-report.onrender.com/api/doctors', { headers: { Authorization: `Bearer ${token}` } }),
+          axios.get('https://drchronos-report.onrender.com/api/offices', { headers: { Authorization: `Bearer ${token}` } }),
+          axios.get('https://drchronos-report.onrender.com/api/appointment_profiles', { headers: { Authorization: `Bearer ${token}` } }),
         ]);
 
         setDoctors(doctorsRes.data);
@@ -1280,7 +1280,7 @@ const DenialReport = () => {
 
       console.log(`Fetching data. Load More: ${isLoadMore}, Params:`, params);
 
-      const response = await axios.get('http://localhost:4000/api/generate-denial-report', {
+      const response = await axios.get('https://drchronos-report.onrender.com/api/generate-denial-report', {
         headers: { Authorization: `Bearer ${token}` },
         params,
       });

@@ -12,7 +12,7 @@ const AuthorizationCallback = () => {
 
     if (code) {
       // Send the authorization code to the backend
-      axios.post('http://localhost:4000/exchange-code', { code })
+      axios.post('https://drchronos-report.onrender.com/exchange-code', { code })
         .then(response => {
           console.log('Access Token:', response.data.access_token);
           // Store the access token

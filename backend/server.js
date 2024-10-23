@@ -68,7 +68,7 @@ const app = express();
 
 // CORS options to handle preflight requests
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://drchronos-report-front.onrender.com',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Include OPTIONS method
   allowedHeaders: ['Content-Type', 'Authorization'], // Allow Authorization header
   credentials: true, // Allow credentials if needed

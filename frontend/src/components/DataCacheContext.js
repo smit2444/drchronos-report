@@ -21,10 +21,10 @@ export const DataCacheProvider = ({ children }) => {
 
       try {
         const [doctorsRes, officesRes] = await Promise.all([
-          axios.get('http://localhost:4000/api/doctors', {
+          axios.get('https://drchronos-report.onrender.com/api/doctors', {
             headers: { Authorization: `Bearer ${token}` },
           }),
-          axios.get('http://localhost:4000/api/offices', {
+          axios.get('https://drchronos-report.onrender.com/api/offices', {
             headers: { Authorization: `Bearer ${token}` },
           }),
         ]);
