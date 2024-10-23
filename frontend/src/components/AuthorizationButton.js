@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@mui/material';
 
-const clientId = 'KGCD5ryo5PMEPI0I5jI5KkGgon2qtizfkumuN5wm';
+const clientId = 'KPxwLsdr7EBH34tmiTEKAojT2KwyLJI48n9eUP47';
 const redirectUri = 'https://drchronos-report-front.onrender.com/oauth-callback';
 const scope = 'labs:read messages:read patients:read patients:summary:read settings:read tasks:read user:read billing:patient-payment:read billing:read calendar:read clinical:read'; // Adjust the scope based on your needs
 
